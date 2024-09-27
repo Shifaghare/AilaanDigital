@@ -1,0 +1,509 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Cinzel', serif; /* Change to Cinzel */
+    /* Gradient background */
+    background: linear-gradient(#6dd4d4 100%);
+    background-size: 100% 200%; /* Increase background size for animation */
+    animation: gradientAnimation 5s ease infinite; /* Animation for smooth transition */
+    background-color: #c10d7c;
+  }
+  body::before {
+    content: '';
+    position: absolute; /* Position it absolutely */
+    top: 0; /* Align it to the top */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Cover full width */
+    height: 100%; /* Cover full height */
+    background-size: 50px 50px; /* Size of the dots */
+    pointer-events: none; /* Prevent interaction with dots */
+    z-index: -1; /* Send dots behind the content */
+    opacity: 0.5; /* Control the opacity */
+}
+
+/* Optional: Adding a glow effect to the dots */
+body::before {
+    filter: blur(5px); /* Apply blur for a glowing effect */
+}
+  
+  /* Gradient Animation */
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0; /* Remove border radius for full width */
+    padding: 20px 20px; /* Remove padding to eliminate spacing */
+    background-color:rgba(221,235,235,255);
+    color:#2a8496;
+    position: fixed; /* Make navbar fixed */
+    top: 0; /* Position it at the top */
+    left: 0; /* Align it to the left */
+    right: 0; /* Stretch it to the right */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+.logo .material-icons {
+    font-size: 2rem;
+    margin-right: 10px;
+    font-weight: 600;
+    color:#578c8c;/* Custom color for the icon */
+}
+
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin: 0 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color:#2a8496;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #4dc1d5; /* Hover effect for menu items */
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    height: 3px;
+    width: 25px;
+    background-color:#578c8c;
+    margin: 4px;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+    /* Body Styles */
+    body {
+            font-family: 'Cinzel', serif; /* Change to Cinzel */
+            background: linear-gradient(135deg, rgba(221, 235, 235, 0.7), rgba(18, 141, 141, 0.5)); /* Gradient background */
+            color: rgba(79, 134, 134, 1);
+            margin: 0; /* Ensure no default margin on the body */
+            padding: 20px; /* Add padding around the body */
+            padding-top: 60px; /* Add a margin on top */
+        
+    }
+    
+    /* Section Layout */
+    .about-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+        background-color: rgba(209, 235, 236, 0.966); /* Slightly white background */
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        max-width: 1400px;
+        margin: 20px auto;
+    }
+    
+    /* Left Section */
+    .left {
+        flex: 1; /* Take equal space */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px; /* Add some padding */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+    }
+    
+    .computer-image {
+        width: 100%; /* Make image responsive */
+        max-width: 400px; /* Set a maximum width */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 15px; /* Slight rounding of the image */
+        box-shadow: 0 4px 15px rgba(99, 46, 46, 0.2); /* Soft shadow effect */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth effects */
+    }
+    
+    .computer-image:hover {
+        transform: scale(1.05); /* Slightly enlarge the image on hover */
+        box-shadow: 0 8px 25px rgba(33, 193, 196, 0.5); /* Glow effect on hover */
+    }
+    
+    /* Right Section */
+    .right {
+        flex: 1; /* Take equal space */
+        text-align: left; /* Align text to the left */
+        padding: 20px; /* Add some padding */
+        font-weight: 300;
+    }
+    
+    h2 {
+        font-size: 2.5rem; /* Increase font size for the heading */
+        margin-bottom: 10px; /* Space between heading and paragraph */
+        color: #2a8496; /* Customize color */
+    }
+    
+    p {
+        font-size: 1.2rem; /* Increase font size for paragraph */
+        color: #333; /* Darker text color for better readability */
+        line-height: 1.6; /* Better spacing for readability */
+        margin-bottom: 10px; /* Space between paragraphs */
+    }
+    
+    /* Media Queries for Responsive Design */
+    @media (max-width: 768px) {
+        .about-section {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .left, .right {
+            width: 100%;
+            padding: 20px 0; /* Add vertical padding */
+        }
+      
+        h2 {
+            font-size: 2rem; /* Decrease heading size on smaller screens */
+        }
+      
+        p {
+            font-size: 1rem; /* Decrease paragraph size on smaller screens */
+        }
+    }
+    @media (max-width: 768px) {
+        .navbar {
+          font-size: 14px; /* Smaller font size for mobile */
+        }
+      
+        .menu-options {
+          width: 100%;
+          top: 60px;
+        }
+      
+        /* Adjust menu option font size for mobile */
+        .menu-options a {
+          font-size: 14px; /* Smaller font size for mobile */
+        }
+      }
+/* Our Services Section */
+.our-services {
+    padding: 50px;
+    background-color: rgba(209, 235, 236, 0.966);
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+  .our-services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2a8496;
+    background-color: rgba(209, 235, 236, 0.966);
+    
+  }
+  
+  /* Services Container */
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Service Box */
+  .service-box {
+    position: relative; /* Needed for the pseudo-element positioning */
+    background-color: rgba(221, 235, 235, 255);
+    padding: 30px 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 5px rgba(0, 174, 170, 0.6), 0 0 30px rgba(20, 177, 177, 0.6); /* Constant glow */
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #2c3e50;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* To ensure pseudo-element does not overflow */
+    transform: translateY(-1px); /* Keep the box elevated */
+}
+
+/* Bold Headline */
+.service-box h3 {
+    font-weight: bold;
+    margin-bottom: 15px; /* Spacing between title and list */
+}
+ 
+  /* Bullet Points */
+  .service-box ul {
+    list-style-type: disc; /* Use bullet points */
+    padding-left: 20px; /* Indent the list */
+  }
+  
+  /* Media Queries for Smaller Screens */
+  @media (max-width: 768px) {
+    .services-container {
+      grid-template-columns: 1fr; /* Stack divs in one column on mobile */
+    }
+  }
+
+  .quotation-form {
+    background-color:rgba(221,235,235,255);
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px; /* Padding for the form */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 600px; /* Maximum width for the form */
+    margin: 20px auto; /* Center the form */
+}
+
+h2 {
+    text-align: center; /* Center the header */
+    color: #2a8496; /* Customize header color */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Space between fields */
+}
+
+label {
+    display: block; /* Labels on a new line */
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Bold labels */
+    color: #333; /* Darker color for labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding for inputs */
+    border: 2px solid #2a8496; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    border-color: #4caf50; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.submit-button {
+    background-color:rgba(221,235,235,255);
+    color: #2a8496; /* Button text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* No border */
+    font-weight: 600;
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    width: 100%; /* Full width for the button */
+    font-size: 1.1rem; /* Font size for the button */
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color:rgb(102, 141, 161);
+    color: aliceblue;/* Change button color on hover */
+}
+.what-clients-say {
+    background-color:rgba(221,235,235,255); /* Light background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding for the section */
+    margin: 0px auto; /* Center the section */
+    max-width: 100%; /* Maximum width for the section */
+    overflow: hidden; /* Hide overflowing content */
+    position: relative; /* For positioning child elements */
+}
+
+h2 {
+    text-align: center; /* Center the header */
+    color: #2a8496; /* Customize header color */
+    margin-bottom: 15px; /* Space below the header */
+}
+
+.testimonial-container {
+    display: flex; /* Use flexbox for horizontal alignment */
+    animation: scroll 10s linear infinite; /* Animation for scrolling */
+}
+
+.testimonial {
+    flex: 0 0 auto; /* Prevent shrinking */
+    width: 300px; /* Set width for each testimonial */
+    margin-right: 20px; /* Space between testimonials */
+    padding: 10px; /* Padding for testimonials */
+    background-color:rgba(221,235,235,255);/* Background color for testimonials */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(220, 215, 215, 0.1); /* Soft shadow */
+    text-align: center; /* Center text */
+}
+
+/* Keyframes for scrolling effect */
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    100% {
+        transform: translateX(-100%); /* End position */
+    }
+}
+.our-mission {
+    background-color:rgba(221,235,235,255);/* Light background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 10px; /* Padding for the section */
+    margin: 20px; /* Center the section */
+    /* max-width: 105%; Maximum width for the section */
+    box-shadow: 0 4px 20px white; /* Soft shadow */
+    text-align: center; /* Center the text */
+}
+
+h2 {
+    color: #2a8496; /* Customize header color */
+    margin-bottom: 15px; /* Space below the header */
+}
+
+p {
+    font-size: 1.2rem; /* Increase font size for better readability */
+    line-height: 1.6; /* Space between lines */
+    color: #272525; /* Dark color for text */
+}
+
+.thankyou-section {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(221, 235, 235, 255);
+    color: #2a8496;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.thankyou-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2a8496;
+}
+
+.thankyou-section p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    line-height: 1.6;
+    color: #2a8496;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1rem; /* Default font size for larger screens */
+    padding: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #2a8496;
+}
+
+.contact-item a,
+.contact-item span {
+    font-size: 1.2rem;
+    color: #2a8496;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #1abc9c;
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 508px) {
+    .thankyou-section h2 {
+        font-size: 1.8rem; /* Adjust heading size for mobile */
+    }
+
+    .thankyou-section p {
+        font-size: 1rem; /* Adjust paragraph size for mobile */
+    }
+
+    .contact-info {
+        font-size: 0.9rem; /* Smaller font size for contact info */
+    }
+
+    .contact-item i {
+        font-size: 18px; /* Smaller icon size for mobile */
+    }
+
+    .contact-item a,
+    .contact-item span {
+        font-size: 1rem; /* Smaller text size for mobile */
+    }
+}
+
+.social-media {
+    margin-top: 30px;
+}
+
+.social-media h3 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    font-size: 2rem;
+    margin: 0 10px;
+    color: #16a085;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #1abc9c;
+}
+
