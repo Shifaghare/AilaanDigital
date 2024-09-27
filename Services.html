@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+    <!-- Google Fonts for Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google Font -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <span class="material-icons">business</span> <!-- Google Icon -->
+          <span>Ailaan Digitals</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="/">Home</a></li>
+          <li><a href="/Services.html">Services</a></li>
+          <li><a href="/Clients">Clients</a></li>
+          <li><a href="/Blogs">Blogs</a></li>
+          <li><a href="/Contact">Contact</a></li>
+          <li><a href="/About">About Us</a></li>
+        </ul>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <script>
+          const hamburger = document.querySelector('.hamburger-menu');
+          const navMenu = document.querySelector('.nav-menu');
+        
+          hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active'); // Toggles dropdown menu
+          });
+        </script>
+      </nav>
+    
+    <section class="our-services">
+        <h2>OUR SERVICES</h2>
+        <div class="services-container">
+          <div class="service-box">
+            <h3>Graphic Designing</h3>
+    
+          </div>
+          <div class="service-box">
+            <h3>Social Media Marketing</h3>
+    
+          </div>
+          <div class="service-box">
+            <h3>Google Ads</h3>
+    
+          </div>
+          <div class="service-box">
+            <h3>SEO</h3>
+    
+          </div>
+          <div class="service-box">
+            <h3>Web Development</h3>
+     
+          </div>
+          <div class="service-box">
+            <h3>E-Commerce</h3>
+
+            </div>
+            </div>
+            </section>
+
+            <div class="thankyou-section">
+                <h2>Thank You</h2>
+                <p>Thank you for considering AILAAN DIGITALS. We are excited to work with you and help elevate your brand to new heights. For any inquiries or to get started, feel free to reach us:</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="material-icons">email</i>
+                        <a href="mailto:ailaandigitals@gmail.com">ailaandigitals@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="material-icons">phone</i>
+                        <span>9987494109</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="material-icons">public</i>
+                        <a href="https://ailaandigitals.com" target="_blank">ailaandigitals.com</a>
+                    </div>
+               
+               
+            </div>
+</body>
+</html>
