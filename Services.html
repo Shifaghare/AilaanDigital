@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AilaanDigitals</title>
+    <!-- Google Fonts for Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google Font -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <span class="material-icons">business</span> <!-- Google Icon -->
+          <span>Ailaan Digitals</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/Services.html">Services</a></li>
+          <li><a href="/Clients.html">Clients</a></li>
+          <li><a href="/Blogs.html">Blogs</a></li>
+          <li><a href="/Contact">Contact</a></li>
+          <li><a href="/Aboutus.html">About Us</a></li>
+          <li><a href="/privacypolicy.html">Privacy Policy</a></li>
+        </ul>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <script>
+          const hamburger = document.querySelector('.hamburger-menu');
+          const navMenu = document.querySelector('.nav-menu');
+        
+          hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active'); // Toggles dropdown menu
+          });
+        </script>
+      </nav>
+</section>
+<div class="our-services">
+  <h2>Our Services</h2>
+  <div class="services-container">
+    <script src="GoogleSheet.js"></script>
+      <div class="service-box" onclick="showDetails('graphic-design')">
+          <h3>Graphic Design</h3>
+          <p>Visually compelling designs tailored to your brand.</p>
+      </div>
+      <div class="service-box" onclick="showDetails('social-media-marketing')">
+          <h3>Social Media Marketing</h3>
+          <p>Strategies to enhance your brand's online presence.</p>
+      </div>
+      <div class="service-box" onclick="showDetails('seo')">
+          <h3>SEO</h3>
+          <p>Optimize your website to rank higher in search results.</p>
+      </div>
+      <div class="service-box" onclick="showDetails('google-ads')">
+          <h3>Google Ads</h3>
+          <p>Maximize your ROI with targeted ad campaigns.</p>
+      </div>
+      <div class="service-box" onclick="showDetails('web-development')">
+          <h3>Web Development</h3>
+          <p>Custom websites that are responsive and optimized.</p>
+      </div>
+      <div class="service-box" onclick="showDetails('ecommerce')">
+          <h3>E-commerce Solutions</h3>
+          <p>Boost your online sales with tailored e-commerce services.</p>
+      </div>
+  </div>
+      
+      
+</body>
+</html>
