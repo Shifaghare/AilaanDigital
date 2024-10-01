@@ -6,8 +6,7 @@
   <title>Navbar</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap-theme.min.css">
+
 
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -18,12 +17,13 @@
       <span>Ailaan Digitals</span>
     </div>
     <ul class="nav-menu">
-      <li><a href="/Services.html">Services</a></li>
-      <li><a href="/Clients.html">Clients</a></li>
-      <li><a href="/Blogs.html">Blogs</a></li>
-      <li><a href="/Contact">Contact</a></li>
-      <li><a href="/Aboutus.html">About Us</a></li>
-      <li><a href="/privacypolicy.html">Privacy Policy</a></li>
+      <li><a href="./">Home</a></li>
+      <li><a href="./Services.html">Services</a></li>
+      <li><a href="./Clients.html">Clients</a></li>
+      <li><a href="./Blogs.html">Blogs</a></li>
+      <li><a href="./Contact">Contact</a></li>
+      <li><a href="./Aboutus.html">About Us</a></li>
+      <li><a href="./privacypolicy.html">Privacy Policy</a></li>
     </ul>
     <div class="hamburger-menu">
       <span></span>
@@ -45,63 +45,61 @@
     <!-- Left Side: Image -->
     <div class="left">
       <img src="./animicon3.gif" style="width: 18%;" alt="Computer" class="computer-image">
-      <img src="./animicon3.gif" style="width: 18%;" alt="Computer" class="computer-image">
+      <img src="./animicon3.gif" style="width: 18%;margin-top:0px;" alt="Computer" class="computer-image">
       
     </div>
 
     <!-- Right Side: Text -->
     <div class="right">
-      <h2>Ailaan Digitals<img src="./icon.gif" style="width: 10%; margin-bottom: 10px;margin-left: 5px;" alt="Computer" class="computer-image"></h2>
+      <h2>Ailaan Digitals</h2>
       <p>A dynamic digital marketing agency dedicated to empower small-scale businesses with innovative and creative approach.</p>
     </div>
   </section>
   <div class="our-services">
     <h2>Our Services</h2>
     <div class="services-container">
-      <script src="GoogleSheet.js"></script>
+
         <div class="service-box" onclick="showDetails('graphic-design')">
             <h3>Graphic Design</h3>
-            <p>Visually compelling designs tailored to your brand.</p>
+
         </div>
         <div class="service-box" onclick="showDetails('social-media-marketing')">
             <h3>Social Media Marketing</h3>
-            <p>Strategies to enhance your brand's online presence.</p>
+
         </div>
         <div class="service-box" onclick="showDetails('seo')">
             <h3>SEO</h3>
-            <p>Optimize your website to rank higher in search results.</p>
+
         </div>
         <div class="service-box" onclick="showDetails('google-ads')">
             <h3>Google Ads</h3>
-            <p>Maximize your ROI with targeted ad campaigns.</p>
+
         </div>
         <div class="service-box" onclick="showDetails('web-development')">
             <h3>Web Development</h3>
-            <p>Custom websites that are responsive and optimized.</p>
         </div>
         <div class="service-box" onclick="showDetails('ecommerce')">
             <h3>E-commerce Solutions</h3>
-            <p>Boost your online sales with tailored e-commerce services.</p>
         </div>
     </div>
 </div>
- <div class="quotation-form">
-    <h2>Request Quotation</h2>
-    <form method="post" action="https://script.google.com/macros/s/AKfycbzADadcgc_bJ5na3gY_Kv-rLtibOGq5ODJUO9Sm47avNAj-PuAf3o62a23D0LlzQZU/exec" id="quotation-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+<div class="quotation-form">
+  <h2>Request Quotation</h2>
+  <form method="post" action="https://script.google.com/macros/s/AKfycbygvEzj51pf3EWx9yRdZ0n8CP-rzY3E5PldQrnog_zkttETJo9YQdvcTA70lsbMNA/exec" id="quotation-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
 
-        <label for="phone">Phone Number</label>
-        <input type="text" id="phone" name="phone" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
 
-        <button class="submit-button" value="submit" type="submit">Submit</button>
-        
-    </form>
-  </div>
-  <script src="GoogleSheet.js"></script>
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" name="phone" required>
+
+      <button class="submit-button" value="submit" type="submit">Submit</button>
+  </form>
+</div>
+<script src="quotation.js"></script>
 
 
 <section class="happy-customers">
