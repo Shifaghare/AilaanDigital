@@ -20,3 +20,24 @@ form.addEventListener('submit', e => {
         console.error('Error! Failed to fetch', error);
     });
 });
+// Get popup and button elements
+const popup = document.getElementById("quotePopup");
+const btn = document.getElementById("getQuoteBtn");
+const closeBtn = document.querySelector(".close-popup");
+
+// When the user clicks the button, open the popup
+btn.onclick = function() {
+  popup.style.display = "block";
+}
+
+// When the user clicks on the close button, close the popup
+closeBtn.onclick = function() {
+  popup.style.display = "none";
+}
+
+// When the user clicks outside the popup content, close the popup
+window.onclick = function(event) {
+  if (event.target == popup) {
+    popup.style.display = "none";
+  }
+}

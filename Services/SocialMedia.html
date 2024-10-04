@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Social Media Marketing</title>
+
+        <!-- Google Fonts for Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Google Font -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+      <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> -->
+       
+    <link rel="stylesheet" href="Socialmedia.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <span class="material-icons">business</span> <!-- Google Icon -->
+          <span>Ailaan Digitals</span>
+        </div>
+
+        <ul class="nav-menu">
+            <li><a href="/">Home</a></li>     
+            <li><a href="/Services.html">Services</a></li>
+            <li><a href="/Clients.html">Clients</a></li>
+            <li><a href="/Blogs.html">Blogs</a></li>
+            <li><a href="/Aboutus.html">About Us</a></li>
+            <li>
+                <a href="#" id="getQuoteBtn" style="background-color: rgb(247, 241, 241); margin-top: -3px;color: rgb(47, 47, 48); border-radius: 12px; padding: 3px 15px; display: flex; align-items: center; justify-content: center;">
+                   <!-- Add your image here -->
+                    Let's Talk
+                    <img src="./phone.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 7px;">
+                </a>
+            </li>
+            
+        </ul>
+
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <script>
+          const hamburger = document.querySelector('.hamburger-menu');
+          const navMenu = document.querySelector('.nav-menu');
+        
+          hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active'); // Toggles dropdown menu
+          });
+        </script>
+      </nav>
+
+    <div class="container">
+        <h1>Social Media Marketing</h1>
+        <p>We craft personalized strategies to enhance your brand's online presence across platforms. From content creation to audience engagement, we help you grow your community and drive meaningful results.</p>
+
+        <div class="platforms">
+            <div class="platform">
+                <img src="./insta.png" alt="Instagram">
+                <h2>Instagram</h2>
+                <p>Build a visually engaging brand through stories, reels, posts, and ads tailored for audience engagement and growth.</p>
+            </div>
+
+            <div class="platform">
+                <img src="./facebook.png" alt="Facebook">
+                <h2>Facebook</h2>
+                <p>Comprehensive marketing strategies for posts, ads, and community engagement to increase your brand’s visibility.</p>
+            </div>
+
+            <div class="platform">
+                <img src="./twitter.png" alt="Twitter">
+                <h2>Twitter</h2>
+                <p>Real-time engagement through tweets, threads, and campaigns designed to grow followers and drive conversations.</p>
+            </div>
+
+            <div class="platform">
+                <img src="./youtube.png" alt="YouTube">
+                <h2>YouTube</h2>
+                <p>From video optimization to ad placement, we help maximize reach and engagement on this powerful video platform.</p>
+            </div>
+
+            <div class="platform">
+                <img src="./linkedin.png" alt="LinkedIn">
+                <h2>LinkedIn</h2>
+                <p>Targeted marketing for professionals through content that builds credibility, connects with B2B leads, and enhances your company’s reputation.</p>
+            </div>
+        </div>
+    </div>
+
+      
+</body>
+</html>

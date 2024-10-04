@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Graphic Design Services</title>
+    
+    <!-- Google Fonts for Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google Font -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> -->
+   
+<link rel="stylesheet" href="Graphicdesign.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <span class="material-icons">business</span> <!-- Google Icon -->
+          <span>Ailaan Digitals</span>
+        </div>
+
+        <ul class="nav-menu">
+            <li><a href="./Services.html">Services</a></li>
+            <li><a href="./Clients.html">Clients</a></li>
+            <li><a href="./Blogs.html">Blogs</a></li>
+            <li><a href="./Contact">Contact</a></li>
+            <li><a href="./Aboutus.html">About Us</a></li>
+            <li><a href="#" id="getQuoteBtn" style="background-color: rgb(246, 238, 238); color: rgb(47, 47, 48); border-radius: 12px; padding: 3px 5px;">Get a quote</a></li>
+           </ul>
+
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <script>
+          const hamburger = document.querySelector('.hamburger-menu');
+          const navMenu = document.querySelector('.nav-menu');
+        
+          hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active'); // Toggles dropdown menu
+          });
+        </script>
+      </nav>
+
+    <div class="container">
+        <div class="services-section">
+            <h2>Graphic Design</h2>
+            <p>Our expert team delivers visually compelling designs tailored to your brand. Whether it's logos, promotional materials, or social media creatives, we ensure your visuals capture attention and communicate your message effectively.</p>
+        </div>
+
+        <div class="service-container">
+            <div class="service">
+                <h2>Logo Designs</h2>
+                <p>We create distinctive logos that embody your brand's identity, ensuring a strong and memorable impression.</p>
+                <!-- <p class="highlight">Our logo designs delivered:</p> -->
+                <!-- Image or links can be placed here -->
+            </div>
+
+            <div class="service">
+                <h2>Business Card Designs</h2>
+                <p>Professionally designed business cards to leave a lasting impact, with unique layouts that reflect your brand.</p>
+                <!-- <p class="highlight">Our business card designs delivered:</p> -->
+                <!-- Image or links can be placed here -->
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

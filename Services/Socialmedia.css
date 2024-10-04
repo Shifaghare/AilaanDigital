@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0; /* Remove border radius for full width */
+    padding: 20px 20px; /* Remove padding to eliminate spacing */
+    background-color: #0e0f0f; /* Updated to deep teal */
+    color: #ffffff; /* Change text color to white for better contrast */
+    position: fixed; /* Make navbar fixed */
+    top: 0; /* Position it at the top */
+    left: 0; /* Align it to the left */
+    right: 0; /* Stretch it to the right */
+    z-index: 1000; /* Ensure it stays above other content */
+    
+}
+
+.hamburger-menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    width: 30px;
+    height: 3px;
+    background-color: white; /* Keep the hamburger icon white */
+    margin: 5px;
+    transition: 0.3s;
+}
+
+/* Media Queries for Mobile & Tablet Views */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none; /* Hide navigation menu */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Positioned under the navbar */
+        left: 0;
+        width: 100%;
+        background-color: #2c3e50; /* You can also change this if needed */
+        padding: 20px 0;
+    }
+
+    .nav-menu.active {
+        display: flex; /* Show menu when active class is added */
+    }
+
+    .nav-menu li {
+        margin: 15px 0; /* Space between each item */
+        text-align: center;
+        color: #ffffff; /* Ensure text is visible on dark background */
+    }
+
+    /* Show the hamburger icon on mobile */
+    .hamburger-menu {
+        display: flex;
+    }
+}
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+.logo .material-icons {
+    font-size: 2rem;
+    margin-right: 5px;
+    font-weight: 300;
+    color:#fdffff;/* Custom color for the icon */
+}
+
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin: 0 8px;
+    font-size: 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color:#dde5e7;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #ffffff /* Hover effect for menu items */
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    height: 3px;
+    width: 25px;
+    background-color:#cce1e1;
+    color: #272b27;
+    margin: 4px;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        background-color: #2c2f31;
+        border-radius: 10px;
+        width: 80%;
+        margin-left: 20%;
+        line-height: 30px;
+    }
+
+    .hamburger-menu {
+        display: flex;
+       
+    }
+}
+
+body {
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #79acac, #8039b3); /* Teal to Purple gradient */
+    color: rgb(81, 4, 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 20px;
+    margin-top: 6%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    font-family:cursive;
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Social Media Platforms */
+.platforms {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.platform {
+    flex: 1 1 calc(33% - 20px);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.platform img {
+    max-width: 80px;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.2s ease-out;
+}
+
+.platform h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    animation: fadeIn 1.8s ease-out;
+}
+
+.platform p {
+    font-size: 1rem;
+    animation: fadeInUp 2s ease-out;
+}
+
+.platform:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .platform {
+        flex: 1 1 calc(50% - 20px); /* Adjusts to two columns on tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    .platform {
+        flex: 1 1 100%; /* Single column on mobile */
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Popup styles */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+  }
+  
+  .popup-content {
+    background-color: #fff;
+    margin:auto; /* 15% from the top and centered */
+    padding: 2px 30px;
+    border-radius: 10px;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px;
+  }
+  
+  .close-popup {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-popup:hover,
+  .close-popup:focus {
+    color: #000;
+    cursor: pointer;
+  }
+  
+
