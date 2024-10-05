@@ -21,7 +21,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3a7274; /* Navbar background color */
     padding: 10px 20px;
 }
 
@@ -31,11 +30,40 @@ body {
     font-size: 24px;
 }
 
+.lets-talk {
+    background-color: azure;
+    border-radius: 50px;
+    padding: 5px 10px; /* More padding for spacing */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.lets-talk:hover {
+    background-color: #d1ebec; /* Slight hover effect, matches background preferences */
+}
+
+.material-symbols-outlined {
+    margin-left: 5px; /* More space between icon and text */
+    font-size: 24px; /* Adjust icon size for balance */
+}
+
+.lets-talk .talk {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: monospace;
+    letter-spacing: -1.5px;
+}
+
 .nav-links {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center; /* Align nav items vertically center */
 }
 
 .nav-links li {
@@ -44,9 +72,16 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: black; /* Ensure this is set to black */
-    font-size: 18px;
-    font-weight: 700;
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: monospace;
+    letter-spacing: -1.5px;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-links a:hover {
+    color: #2a8496; /* Change color on hover */
 }
 
 .about {
@@ -54,12 +89,12 @@ body {
 }
 
 .background-image {
-    opacity: 30%; /* Adjust the opacity to make it transparent */
-    width: 100%;
-    height: 870px; /* Set the desired height */
+    opacity: 40%; /* Adjust the opacity to make it transparent */
+    width: 60%;
+    height: 665px; /* Set the desired height */
     object-fit: cover; /* Ensure the image covers the area */
     position: absolute; /* Position it absolutely */
-    margin-top: -70px;
+    margin-top: -75px;
     left: 0; /* Align to the left */
     z-index: 1; /* Send it behind the content */
 }
@@ -84,6 +119,16 @@ body {
     transform: translateY(20px); /* Move the left section down */
 }
 
+.left p{
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, serif;
+    opacity: 60%;
+    font-weight: 900;
+}
+
+
+
+
 .right {
     background-color:rgba(110, 151, 152, 0.8); /* White background with transparency */
     border-radius: 10px; /* Rounded corners */
@@ -97,7 +142,7 @@ body {
 }
 
 .contact-form label {
-    margin: 10px 0 5px; /* Space out labels */
+    margin: 1px 0 1px; /* Space out labels */
 }
 
 .contact-form input, .contact-form textarea {
@@ -108,7 +153,7 @@ body {
 }
 
 .contact-form button {
-    background-color: #83a9aa; /* Button color */
+    background-color: #0d0e0e; /* Button color */
     color: white; /* Text color for button */
     padding: 10px; /* Padding for button */
     border: none; /* Remove border */
@@ -117,5 +162,348 @@ body {
 }
 
 .contact-form button:hover {
-    background-color: #71a7a7; /* Darker shade on hover */
+    background-color: #0d9b9b; /* Darker shade on hover */
 }
+
+
+
+
+.services-container {
+    text-align: center;
+    padding: 50px 20px;
+    
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    color: #080808;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color:rgba(110, 151, 152);;
+    align-items: center;
+    /* justify-content: center; */
+    font-family: cursive;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    height: auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-bottom:20px ;
+}
+
+.card:hover h3 {
+    color: #f9fdfc;
+}
+
+@media (max-width: 768px) {
+    .service-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+.clients-section {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .clients-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .clients-carousel {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    scroll-snap-type: x mandatory; /* Ensures snapping effect on scroll */
+    padding-bottom: 20px;
+  }
+  
+  .client-card {
+    flex: 0 0 auto;
+    width: 150px;
+    text-align: center;
+    scroll-snap-align: start;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .client-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Ensures images fit nicely in the space */
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .client-card p {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .clients-carousel {
+      gap: 10px;
+    }
+  
+    .client-card {
+      width: 120px;
+    }
+  
+    .clients-section h2 {
+      font-size: 2rem;
+    }
+  
+    .client-card img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .clients-carousel {
+      gap: 5px;
+    }
+  
+    .client-card {
+      width: 100px;
+    }
+  
+    .clients-section h2 {
+      font-size: 1.8rem;
+    }
+  
+    .client-card img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  .reviews-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #d1ebec;
+}
+
+.reviews-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.reviews-carousel {
+    display: flex;
+    overflow: hidden; /* Hide the overflowing cards */
+    white-space: nowrap; /* Ensure the cards are displayed in a single row */
+    animation: scrollReviews 20s linear infinite; /* Auto-scroll animation */
+}
+
+.review-card {
+    width: auto;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.review-card p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.review-card h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes scrollReviews {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .review-card {
+        width: calc(50% - 20px); /* Two cards per row on tablets */
+    }
+
+    .reviews-section h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .review-card {
+        width: calc(100% - 20px); /* One card per row on mobile */
+    }
+
+    .reviews-section h2 {
+        font-size: 1.8rem;
+    }
+}
+  
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+    background-color: #d1ebec;
+    color: black;
+}
+.left-footer {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-logo {
+    width: 250px; /* Adjust the logo size */
+    margin-bottom: -15px;
+    margin-top: -30px;
+    margin-left: 30px;
+
+}
+
+.left-footer p {
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Cinzel', serif; /* Use your preferred font */
+    margin-bottom: 20px;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 5px; 
+/* Adds space between buttons */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 30px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #086658;
+}
+
+.call-btn::before {
+    content: '📞 ';
+}
+
+.mail-btn::before {
+    content: '✉️ ';
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn {
+        width: 100%; /* Full width buttons on smaller screens */
+        text-align: center;
+    }
+}
+
+.right-footer {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.quick-links, .services-links {
+    margin-left: 20px;
+}
+
+.quick-links h3, .services-links h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.quick-links ul, .services-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links li, .services-links li {
+    margin-bottom: 10px;
+}
+
+.quick-links a, .services-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.quick-links a:hover, .services-links a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+/* Responsive design for mobile and tablet */
+@media (max-width: 768px) {
+    .footer-section {
+        flex-direction: column;
+    }
+
+    .right-footer {
+        flex-direction: row;
+        margin-top: 20px;
+        gap: 75px;
+    }
+
+    .quick-links, .services-links {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+

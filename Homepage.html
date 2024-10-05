@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">
-            <a href="#">MyLogo</a> <!-- Replace with your logo -->
+            <img src=""> <!-- Replace with your logo -->
         </div>
         <ul class="nav-links">
-            <a href="#"><strong>Home</strong></a>
+            <a href="#">Home</a>
             <li><a href="#">Services</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="#">Let's Talk</a></li>
+            <li class="lets-talk"><a href="#"><span class="talk">Let's talk</span></a><span class="material-symbols-outlined">call</span></li>
         </ul>
     </nav>
 
@@ -26,12 +30,21 @@
             <div class="section">
 
                 <div class="left">
-                    <img src="logo.png" style="width: 85%;margin:-50px 30px;">
-                    <p style="font-size: 17px;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, serif;opacity: 70%;font-weight: 900;">Adynamic digital marketing agency dedicated to empower small-scale businesses with innovative </br>and creative approach.</p>
+                    <div style="height: 100px;width: 50%;border: 2px solid red;">
+                        <span style="letter-spacing: 2px;font-size: 30px;opacity: 70%;">AILAAN</span>
+                        <hr style="width: 50%; border: 1px solid black;"/>
+                        <span style="letter-spacing: 2px;font-size: 10px;opacity: 70%;">DIGITALS</span>
+
+
+                    </div>
+
+                    <p>A Dynamic Digital Marketing Agency dedicated to empower small-scale businesses with innovative </br>and creative approach.</p>
                 </div>
+
+                
                 <div class="right">
-                    <form class="contact-form" action="#" method="POST">
-                        <h1 style="margin: auto;">Contact US</h1>
+                    <form class="contact-form" action="https://script.google.com/macros/s/AKfycbygvEzj51pf3EWx9yRdZ0n8CP-rzY3E5PldQrnog_zkttETJo9YQdvcTA70lsbMNA/exec" method="POST">
+                        <h1 style="margin: auto;opacity: 60%;">Contact Us</h1>
 
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
@@ -41,17 +54,169 @@
             
                         <label for="phone">Phone Number</label>
                         <input type="text" id="phone" name="phone" required>
-            
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-            
-                        <button type="submit">Submit</button>
+                        
+                        <button type="submit" value="submit" type="submit">Submit</button>
                     </form>
                 </div>
+                <script src="quotation.js"></script>
+
 </div>
 </div>
 
-      
+<div class="services-container">
+    <h2>Our Services</h2>
+    <p class="para" style="margin-bottom: 30px; font-weight: 500; font-size: 20px;"><strong>Comprehensive Website Services to boost your online business</br>
+    Empower Your Business With these powerful Services From Our Website</strong></p>
+    <div class="service-cards">
+        <div class="card">
+            <h3>Graphics Designing</h3>
+            <img src="/graphics1.png" style="width: 100px;">
+        </div>
+        <div class="card">
+            <h3>Social Media Marketing</h3>
+            <img src="/social.png" style="width: 130px;">
+        </div>
+        <div class="card">
+            <h3>SEO</h3>
+            <img src="/seo.png" style="width: 100px;">
+        </div>
+        <div class="card">
+            <h3>E-Commerce</h3>
+            <img src="/ecommerce.png" style="width: 100px;">
+        </div>
+        <div class="card">
+            <h3>Web Development</h3>
+            <img src="web dev.png" style="width: 100px;">
+        </div>
+        <div class="card">
+            <h3>Google Ads</h3>
+            <img src="/google.png" style="width: 100px;">
+        </div>
+    </div>
+</div>
+
+<section class="clients-section">
+    <h2>Our Clients</h2>
+    <div class="clients-carousel">
+      <div class="client-card">
+        <img src="client1.jpg" alt="Client 1" />
+        <p>Client 1</p>
+      </div>
+      <div class="client-card">
+        <img src="client2.jpg" alt="Client 2" />
+        <p>Client 2</p>
+      </div>
+      <div class="client-card">
+        <img src="client3.jpg" alt="Client 3" />
+        <p>Client 3</p>
+      </div>
+      <div class="client-card">
+        <img src="client1.jpg" alt="Client 1" />
+        <p>Client 1</p>
+      </div>
+      <div class="client-card">
+        <img src="client2.jpg" alt="Client 2" />
+        <p>Client 2</p>
+      </div>
+      <div class="client-card">
+        <img src="client3.jpg" alt="Client 3" />
+        <p>Client 3</p>
+      </div>  <!-- Add more client cards as needed -->
+    </div>
+  </section>
+
+  <section class="reviews-section">
+    <h2>What Our Clients Say</h2>
+    <div class="reviews-carousel">
+        <div class="review-card">
+            <p>"Working with WitchCode was a pleasure. Our e-commerce site is performing better than ever."</p>
+            <h4>- Client 4</h4>
+        </div>
+        <div class="review-card">
+            <p>"The designs were creative, and the execution was flawless. Highly professional team."</p>
+            <h4>- Client 5</h4>
+        </div>
+        <div class="review-card">
+            <p>"WitchCode completely transformed our online presence. We saw immediate results."</p>
+            <h4>- Client 6</h4>
+        </div>
+        <div class="review-card">
+            <p>"Incredible attention to detail! They really listened to what we wanted."</p>
+            <h4>- Client 7</h4>
+        </div>
+        <div class="review-card">
+            <p>"Our social media engagement has skyrocketed thanks to WitchCode's strategies."</p>
+            <h4>- Client 8</h4>
+        </div>
+        <div class="review-card">
+            <p>"Professional, timely, and creative. I would recommend WitchCode to anyone."</p>
+            <h4>- Client 9</h4>
+        </div>
+        <div class="review-card">
+            <p>"WitchCode helped our business grow by optimizing our Google Ads campaigns."</p>
+            <h4>- Client 10</h4>
+        </div>
+        <div class="review-card">
+            <p>"Their web development team is one of the best we've worked with. Seamless experience!"</p>
+            <h4>- Client 11</h4>
+        </div>
+        <div class="review-card">
+            <p>"They brought fresh ideas to our digital marketing and increased our conversions."</p>
+            <h4>- Client 12</h4>
+        </div>
+        <div class="review-card">
+            <p>"WitchCode's customer service and dedication made all the difference in our project."</p>
+            <h4>- Client 13</h4>
+        </div>
+        
+        <!-- Add more review cards as needed -->
+    </div>
+</section>
+<script>
+    const reviewsCarousel = document.querySelector('.reviews-carousel');
+
+    reviewsCarousel.addEventListener('mouseenter', () => {
+        reviewsCarousel.style.animationPlayState = 'paused'; // Pause the scrolling
+    });
+
+    reviewsCarousel.addEventListener('mouseleave', () => {
+        reviewsCarousel.style.animationPlayState = 'running'; // Resume the scrolling
+    });
+</script>
+
+<footer class="footer-section">
+    <div class="left-footer">
+        <img src="logo1.png" alt="Company Logo" class="footer-logo">
+        <p>Empowering your brand with digital solutions.</p>
+        <div class="contact-buttons">
+            <a href="tel:+1234567890" class="btn call-btn">Call Us</a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="btn mail-btn">Email Us</a>
+        </div>
+    </div>
+
+    <div class="right-footer">
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+        </div>
+        <div class="services-links">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">E-Commerce</a></li>
+                <li><a href="#">Google Ads</a></li>
+                <li><a href="#">SEO</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+  
 
     
 </body>
