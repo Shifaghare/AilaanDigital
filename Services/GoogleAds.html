@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Graphic Design Services</title>
+    
+    <!-- Google Fonts for Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google Font -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> -->
+   
+<link rel="stylesheet" href="ads.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <span class="material-icons">business</span> <!-- Google Icon -->
+          <span>Ailaan Digitals</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="/">Home</a></li>     
+          <li><a href="/Services.html">Services</a></li>
+          <li><a href="/Clients.html">Clients</a></li>
+          <li><a href="/Blogs.html">Blogs</a></li>
+          <li><a href="/Aboutus.html">About Us</a></li>
+          <li>
+              <a href="#" id="getQuoteBtn" style="background-color: rgb(247, 241, 241); margin-top: -3px;color: rgb(47, 47, 48); border-radius: 12px; padding: 3px 15px; display: flex; align-items: center; justify-content: center;">
+                 <!-- Add your image here -->
+                  Let's Talk
+                  <img src="./phone.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 7px;">
+              </a>
+          </li>
+          
+      </ul>
+
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <script>
+          const hamburger = document.querySelector('.hamburger-menu');
+          const navMenu = document.querySelector('.nav-menu');
+        
+          hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active'); // Toggles dropdown menu
+          });
+        </script>
+      </nav>
+
+    
+    <div class="seo-container" id="google-ads">
+        <h1>Google Ads</h1>
+        <p class="seo-description">
+            Maximize your ROI with targeted Google Ads campaigns. We manage everything from keyword research to ad optimization, ensuring your brand reaches the right audience and achieves measurable results.
+        </p>
+        
+        <ul>
+            <li>Search Ads: Text-based ads appearing in Google search results, aimed at users actively searching for related products/services.</li>
+            <li>Display Ads: Visual banner ads displayed across millions of websites in Google's Display Network, targeting audiences based on interests and demographics.</li>
+            <li>Video Ads: Ads that appear on YouTube or Google’s video partner sites, ideal for engaging viewers through multimedia content.</li>
+            <li>Shopping Ads: Product-based ads that show up in Google search results, offering direct shopping options to users.</li>
+            <li>App Promotion Ads: Ads designed to promote mobile apps across Google's platforms, driving downloads and usage.</li>
+            <li>Local Service Ads: Ads that connect businesses with local customers looking for specific services, optimized for generating direct leads.</li>
+            <li>Smart Campaigns: Automated campaigns where Google optimizes targeting and bidding based on your business goals, making it ideal for small businesses.</li>
+        </ul>
+    </div>
+
+</body>
+</html>

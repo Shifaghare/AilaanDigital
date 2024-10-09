@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap');
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 20px;
+    background-color: #0e0f0f; /* Deep teal background */
+    color: #ffffff; /* White text */
+    position: fixed; /* Fix navbar to the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it's above other content */
+    height: 60px;
+}
+
+.hamburger-menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    width: 30px;
+    height: 3px;
+    background-color: white; /* White hamburger lines */
+    margin: 5px;
+    transition: 0.3s;
+}
+
+/* Media Queries for Mobile & Tablet Views */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none; /* Hide navigation menu on small screens */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Positioned under the navbar */
+        left: 0;
+        width: 100%;
+        background-color: #2c3e50; /* You can change this if needed */
+        padding: 20px 0;
+    }
+
+    .nav-menu.active {
+        display: flex; /* Show menu when active class is added */
+    }
+
+    .nav-menu li {
+        margin: 15px 0; /* Space between each item */
+        text-align: center;
+        color: #ffffff; /* Ensure text is visible on dark background */
+    }
+
+    /* Show the hamburger icon on mobile */
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.logo .material-icons {
+    font-size: 2rem;
+    margin-right: 5px;
+    font-weight: 300;
+    color: #fdffff; /* Custom color for the icon */
+}
+
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin: 0 8px;
+    font-size: 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #dde5e7;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #ffffff /* Hover effect for menu items */
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    height: 3px;
+    width: 25px;
+    background-color: #cce1e1;
+    margin: 4px;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        background-color: #2c2f31;
+        border-radius: 10px;
+        width: 80%;
+        margin-left: 20%;
+        line-height: 30px;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+/* General Body and Container Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    justify-content: center; /* Horizontally centers the container */
+    align-items: center;
+}
+
+
+.seo-container {
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #fff;
+    margin:80px auto; /* Adjusted to account for fixed navbar */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+@media(max-width:450px){
+    .seo-container{
+        margin-bottom: -20px;
+    }
+}
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2a8496;
+    margin-bottom: 30px;
+}
+
+.seo-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #555;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul:not(.nav-menu) li::before {
+    content: "✔";
+    color: #2a8496;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.delivered-websites {
+    max-width: 1000px;
+    margin: 1px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #2a8496;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.website-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the items */
+}
+
+.website-item {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    text-align: center; /* Center text under logo */
+}
+
+.website-logo {
+    width: 60px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #888;
+}

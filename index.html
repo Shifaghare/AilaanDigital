@@ -6,27 +6,28 @@
   <title>Navbar</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
 
 
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="background">
  <nav class="navbar">
+
     <div class="logo">
       <span class="material-icons">business</span> <!-- Google Icon -->
       <span>Ailaan Digitals</span>
     </div>
+
     <ul class="nav-menu">
       <li><a href="./Services.html">Services</a></li>
       <li><a href="./Clients.html">Clients</a></li>
       <li><a href="./Blogs.html">Blogs</a></li>
-      <li><a href="./Contact">Contact</a></li>
       <li><a href="./Aboutus.html">About Us</a></li>
       <li>
-        <a href="#" id="getQuoteBtn" style="background-color: rgb(247, 241, 241); margin-top: -3px;color: rgb(47, 47, 48); border-radius: 12px; padding: 3px 15px; display: flex; align-items: center; justify-content: center;">
+        <a href="" id="getQuoteBtn" style="background-color: rgb(247, 241, 241); margin-top: -3px;color: rgb(47, 47, 48); border-radius: 12px; padding: 3px 15px; display: flex; align-items: center; justify-content: center;">
            <!-- Add your image here -->
-            Let's Talk
-            <img src="./Services/phone.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 7px;">
+            Brochure
         </a>
     </li>     </ul>
     <div class="hamburger-menu">
@@ -45,23 +46,57 @@
   </nav>
 
 </div>
-  <section class="about-section">
-    
-    <!-- Left Side: Image -->
-    <div class="left">
-      <img src="./animicon3.gif" style="width: 13%;margin-top: 20px;" alt="Computer" class="computer-image">
-      <img src="./animicon3.gif" style="width: 13%;margin-bottom: 10px;" alt="Computer" class="computer-image">
-      
-    </div>
 
-    <!-- Right Side: Text -->
-    <div class="right">
-      <h2>Ailaan Digitals</h2>
-      <p>A dynamic digital marketing agency dedicated to empower small-scale businesses with innovative and creative approach.</p>
-    </div>
-  </section>
+
+<section class="about-section">
+
+    <img src="../AilaanDigitals/bg.png" class="background-image">
+
+     <div class="left"> 
+      <span>AILAAN<hr></span>
+      <span class="digi">DIGITALS</span>
+     
+       <p>A Dynamic Digital Marketing Agency dedicated to empower small-scale businesses with innovative </br>and creative approach.</p>
+     </div>
+     
+     <div class="right">
+      <h2> Contact Us</h2>
+      <form method="post" action="https://script.google.com/macros/s/AKfycbygvEzj51pf3EWx9yRdZ0n8CP-rzY3E5PldQrnog_zkttETJo9YQdvcTA70lsbMNA/exec" id="quotation-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" name="name" required>
+  
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" name="email" required>
+  
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your mobile number" required>
+  
+        <button class="submit-button" value="submit" type="submit">Submit</button>
+      </form>
+     </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <div class="our-services">
     <h2>Our Services</h2>
+
+    <p>Comprehensive Online Services to ignite your online success.<br/>Empower your business with services from our Website.</p>
+
     <div class="services-container">
 
         <div class="service-box" onclick="showDetails('graphic-design')">
@@ -88,6 +123,11 @@
         </div>
     </div>
 </div>
+
+
+
+
+
 
 <div id="quotePopup" class="popup">
   <div class="popup-content">

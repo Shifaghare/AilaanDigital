@@ -20,13 +20,38 @@
         </div>
         <ul class="nav-menu">
           <li><a href="/">Home</a></li>
-          <li><a href="/Services.html">Services</a></li>
           <li><a href="/Clients.html">Clients</a></li>
           <li><a href="/Blogs.html">Blogs</a></li>
-          <li><a href="/Contact">Contact</a></li>
           <li><a href="/Aboutus.html">About Us</a></li>
-          <li><a href="/privacypolicy.html">Privacy Policy</a></li>
+          <li>
+            <a href="#" id="getQuoteBtn" style="background-color: rgb(247, 241, 241); margin-top: -3px;color: rgb(47, 47, 48); border-radius: 12px; padding: 3px 15px; display: flex; align-items: center; justify-content: center;">
+               <!-- Add your image here -->
+                Let's Talk
+                <img src="./Services/phone.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 7px;">
+            </a>
+        </li>
         </ul>
+        <div id="quotePopup" class="popup">
+          <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2>Request Quotation</h2>
+            <form method="post" action="https://script.google.com/macros/s/AKfycbygvEzj51pf3EWx9yRdZ0n8CP-rzY3E5PldQrnog_zkttETJo9YQdvcTA70lsbMNA/exec" id="quotation-form">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Enter your name" name="name" required>
+        
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Enter your email" name="email" required>
+        
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" name="phone" placeholder="Enter your mobile number" required>
+        
+              <button class="submit-button" value="submit" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+        <script src="quotation.js"></script>
+        
+        
         <div class="hamburger-menu">
           <span></span>
           <span></span>
@@ -59,23 +84,36 @@
           <p>Strategies to enhance your brand's online presence.</p>
       </div>
     </a>
-    
+
+
+    <a href="./Services/SEO.html">
       <div class="service-box" onclick="showDetails('seo')">
           <h3>SEO</h3>
           <p>Optimize your website to rank higher in search results.</p>
       </div>
+    </a>
+
+
+    <a href="./Services/GoogleAds.html">
       <div class="service-box" onclick="showDetails('google-ads')">
           <h3>Google Ads</h3>
           <p>Maximize your ROI with targeted ad campaigns.</p>
       </div>
+    </a>
+
+    <a href="./Services/Web dev.html">
       <div class="service-box" onclick="showDetails('web-development')">
           <h3>Web Development</h3>
           <p>Custom websites that are responsive and optimized.</p>
       </div>
+    </a>
+
+    <a href="./Services/E-commerce.html">
       <div class="service-box" onclick="showDetails('ecommerce')">
           <h3>E-commerce Solutions</h3>
           <p>Boost your online sales with tailored e-commerce services.</p>
       </div>
+    </a>
   </div>
       
       

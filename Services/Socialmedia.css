@@ -12,7 +12,8 @@
     top: 0; /* Position it at the top */
     left: 0; /* Align it to the left */
     right: 0; /* Stretch it to the right */
-    z-index: 1000; /* Ensure it stays above other content */
+    z-index: 1000;
+    height: 30px; /* Ensure it stays above other content */
     
 }
 
@@ -132,7 +133,7 @@ body {
     font-family: 'Cinzel', serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #79acac, #8039b3); /* Teal to Purple gradient */
+    background: linear-gradient(135deg, #c694ac, #948888,#3c5d80,#794583); /* Teal to Purple gradient */
     color: rgb(81, 4, 4);
     display: flex;
     justify-content: center;
@@ -152,6 +153,7 @@ h1 {
     font-size: 3rem;
     margin-bottom: 20px;
     animation: fadeIn 1s ease-out;
+    margin-top: 30px;
 }
 
 p {
@@ -206,13 +208,24 @@ p {
     .platform {
         flex: 1 1 calc(50% - 20px); /* Adjusts to two columns on tablet */
     }
+.h1{
+    font-size:small ;
+}
+
 }
 
 @media (max-width: 480px) {
     .platform {
         flex: 1 1 100%; /* Single column on mobile */
     }
+
+
+    .h1{
+        font-size:small ;
+    }
 }
+
+
 
 /* Animations */
 @keyframes fadeIn {

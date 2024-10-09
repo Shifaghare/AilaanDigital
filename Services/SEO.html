@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Graphic Design Services</title>
+    
+    <!-- Google Fonts for Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google Font -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> -->
+   
+<link rel="stylesheet" href="Seo.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <span class="material-icons">business</span> <!-- Google Icon -->
+          <span>Ailaan Digitals</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="/">Home</a></li>     
+          <li><a href="/Services.html">Services</a></li>
+          <li><a href="/Clients.html">Clients</a></li>
+          <li><a href="/Blogs.html">Blogs</a></li>
+          <li><a href="/Aboutus.html">About Us</a></li>
+          <li>
+              <a href="#" id="getQuoteBtn" style="background-color: rgb(247, 241, 241); margin-top: -3px;color: rgb(47, 47, 48); border-radius: 12px; padding: 3px 15px; display: flex; align-items: center; justify-content: center;">
+                 <!-- Add your image here -->
+                  Let's Talk
+                  <img src="./phone.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 7px;">
+              </a>
+          </li>
+          
+      </ul>
+
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <script>
+          const hamburger = document.querySelector('.hamburger-menu');
+          const navMenu = document.querySelector('.nav-menu');
+        
+          hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active'); // Toggles dropdown menu
+          });
+        </script>
+      </nav>
+
+
+      <div class="seo-container">
+        <h1>SEO Services</h1>
+
+        <p class="seo-description">Increase your website's visibility with our comprehensive SEO services. We optimize your site for search engines, helping you rank higher, attract organic traffic, and convert visitors into customers.</p>
+
+        <h2>Our Key SEO Services</h2>
+        <ul>
+            <li><span class="service-title">Internal Linking:</span> Strategic linking within your website to improve navigation and boost SEO rankings.</li>
+            <li><span class="service-title">Meta Tags:</span> Customized meta descriptions and title tags that increase the visibility of your web pages on search engines.</li>
+            <li><span class="service-title">Canonical Tags:</span> Tags that prevent duplicate content issues by specifying the original version of a webpage, helping in SEO ranking.</li>
+            <li><span class="service-title">Bookmarks:</span> Adding your site to various bookmarking services to increase traffic and improve search engine rankings.</li>
+            <li><span class="service-title">Blog Posts:</span> Optimized blog content to drive organic traffic, rank for targeted keywords, and establish industry expertise.</li>
+            <li><span class="service-title">Image Linking:</span> Use of optimized images linked to relevant content to enhance SEO and improve user experience.</li>
+            <li><span class="service-title">XML Sitemap:</span> Creation and submission of an XML sitemap to ensure search engines crawl your website efficiently.</li>
+            <li><span class="service-title">Alt Tags for Images:</span> Optimized alternative text for images to improve SEO and accessibility.</li>
+            <li><span class="service-title">Broken Link Fixing:</span> Auditing and fixing broken links to improve website performance and SEO.</li>
+            <li><span class="service-title">Content Optimization:</span> Enhancing website content with relevant keywords to improve search rankings and user engagement.</li>
+        </ul>
+
+        <div class="footer">
+            <p>Contact us today to boost your website's visibility with our expert SEO services.</p>
+        </div>
+    </div>
+
+</body>
+</html>

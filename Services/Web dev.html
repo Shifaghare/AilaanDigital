@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Graphic Design Services</title>
+    
+    <!-- Google Fonts for Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google Font -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> -->
+   
+<link rel="stylesheet" href="webdev.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <span class="material-icons">business</span> <!-- Google Icon -->
+          <span>Ailaan Digitals</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="/">Home</a></li>     
+          <li><a href="/Services.html">Services</a></li>
+          <li><a href="/Clients.html">Clients</a></li>
+          <li><a href="/Blogs.html">Blogs</a></li>
+          <li><a href="/Aboutus.html">About Us</a></li>
+          <li>
+              <a href="#" id="getQuoteBtn" style="background-color: rgb(247, 241, 241); margin-top: -3px;color: rgb(47, 47, 48); border-radius: 12px; padding: 3px 15px; display: flex; align-items: center; justify-content: center;">
+                 <!-- Add your image here -->
+                  Let's Talk
+                  <img src="./phone.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 7px;">
+              </a>
+          </li>
+          
+      </ul>
+
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <script>
+          const hamburger = document.querySelector('.hamburger-menu');
+          const navMenu = document.querySelector('.nav-menu');
+        
+          hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active'); // Toggles dropdown menu
+          });
+        </script>
+    </nav>
+
+    <div class="seo-container" id="web-development">
+        <h1>Web Development</h1>
+        <p class="seo-description">
+            We design and develop custom websites that are responsive, user-friendly, and optimized for performance. Whether you need a simple site or a complex e-commerce platform, we’ve got you covered.
+        </p>
+        
+        <ul>
+            <li>Static Websites: Simple, fast-loading websites with fixed content, ideal for showcasing products, services, and contact information.</li>
+            <li>Dynamic Websites: Fully functional websites with interactive elements, databases, and user personalization, tailored to your needs.</li>
+        </ul>
+        </div>
+        
+        <div class="delivered-websites" id="delivered-websites">
+        <h2>Our Delivered Websites</h2>
+        <div class="website-list">
+            <div class="website-item">
+                <img src="logo1.png" alt="Website 1 Logo" class="website-logo">
+                <a href="https://example1.com" target="_blank">Website 1</a>
+            </div>
+            <div class="website-item">
+                <img src="logo2.png" alt="Website 2 Logo" class="website-logo">
+                <a href="https://example2.com" target="_blank">Website 2</a>
+            </div>
+            <div class="website-item">
+                <img src="logo3.png" alt="Website 3 Logo" class="website-logo">
+                <a href="https://example3.com" target="_blank">Website 3</a>
+            </div>
+            <!-- Add more websites as needed -->
+        </div>
+        </div>
+        
+   
+   
+
+
+</body>
+</html>
