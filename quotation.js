@@ -13,7 +13,7 @@ form.addEventListener('submit', e => {
     .then(() => {
         alert("Your form has been submitted!");
         setTimeout(() => {
-            window.location.href = "/"; // Redirect to homepage
+            window.location.href = "./"; // Redirect to homepage
         }, 100);
     })
     .catch(error => {
@@ -21,24 +21,3 @@ form.addEventListener('submit', e => {
     });
 });
 
-// Get popup and button elements
-const popup = document.getElementById("quotePopup");
-const btn = document.getElementById("getQuoteBtn");
-const closeBtn = document.querySelector(".close-popup");
-
-// When the user clicks the button, open the popup
-btn.onclick = function() {
-  popup.style.display = "block";
-}
-
-// When the user clicks on the close button, close the popup
-closeBtn.onclick = function() {
-  popup.style.display = "none";
-}
-
-// When the user clicks outside the popup content, close the popup
-window.onclick = function(event) {
-  if (event.target == popup) {
-    popup.style.display = "none";
-  }
-}
